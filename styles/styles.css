@@ -235,6 +235,12 @@ footer{
         margin-top: 3rem;
         gap: 20px;
     }
+    .ten-years-badge h2{
+        font-size: 2rem;
+    }
+    .ten-years-badge p{
+        font-size: 1rem;
+    }
     .sponsors-img img{
         width: 12rem;
     }
@@ -250,7 +256,7 @@ footer{
         width: 100%;
     }
     .ten-years-badge{
-        margin: 0 auto;
+        margin: 10% auto;
         padding: 10px;
         width: 300px;
         height: 100%;
