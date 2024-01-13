@@ -82,7 +82,7 @@ main{
     margin: 70px auto;
 }
 
-/* Features Section */
+/* Teams Section */
 .team-container{
     display: flex;
     align-items: center;
@@ -137,6 +137,54 @@ main{
     margin: 0px;
 }
 
+/* Features Section */
+.features{
+    display: flex;
+    margin-top: 130px;
+    gap: 146px;
+}
+.card{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.features-content .section-title{
+    margin-bottom: 24px;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.features-content .description{
+    margin-bottom: 30px;
+}
+.features-img img{
+    margin-left: 92px;
+}
+/* Ten Years */
+.ten-years-badge{
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 45px;
+    padding-bottom: 0px;
+    width: 342px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    bottom: 120px;
+}
+.ten-years-badge h2{
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0px;
+}
+.ten-years-badge p{
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 /* Sponsors Section */
 .sponsors{
     text-align: center;
@@ -152,19 +200,34 @@ main{
     margin-top: 50px;
 }
 
+/* Footer */
+footer{
+    max-width: 1440px;
+    margin: 130px auto;
+}
+.footer{
+    color: var(--Dark-02, #424242);
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 40px 410px;
+    border-radius: 8px;
+    background: #FFF4E7;
+}
+
 /* responsive media queries */
 /* Mobile Devices */
 @media screen and (max-width: 576px) {
     header{
         padding: 20px;
     }
-    nav, .team-container, .facts-card-container, .sponsors-img{
+    nav, .team-container, .facts-card-container, .sponsors-img, .features{
         flex-direction: column;
     }
     .teams-img-container{
         grid-template-columns: repeat(1, 1fr);
     }
-    .teams-content, .facts  ,.facts-card-container{
+    .teams-content, .facts  ,.facts-card-container, .features, .footer{
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -178,6 +241,24 @@ main{
     .sponsors-img{
         align-items: center; 
         gap: 40px; 
+    }
+    .features{
+        gap: 30px;
+    }
+    .features-img img{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .ten-years-badge{
+        margin: 0 auto;
+        padding: 10px;
+        height: 100%;
+    }
+    .footer{
+        padding: 40px 40px;
+    }
+    footer{
+        width: 95%;
     }
 }
 
